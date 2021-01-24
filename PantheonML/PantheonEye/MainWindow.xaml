@@ -1,0 +1,15 @@
+﻿<Window x:Class="PantheonEye.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PantheonEye"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="800" Height="450">
+    <DockPanel Background="#FF282828">
+		<Grid DockPanel.Dock="Bottom" Height="100">
+			<TextBox Name="DebugTextBox" Background="#FF282828" Foreground="#FF626262"/>
+		</Grid>
+		<Image Name="ScreenView" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+	</DockPanel>
+</Window>

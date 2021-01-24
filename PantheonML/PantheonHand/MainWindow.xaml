@@ -1,0 +1,24 @@
+﻿<Window x:Class="PantheonHand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        xmlns:GControls="clr-namespace:GKitForWPF.UI.Controls;assembly=GKitForWPF"
+
+        mc:Ignorable="d"
+        Title="MainWindow" Width="800" Height="450">
+    <DockPanel>
+		<StackPanel DockPanel.Dock="Right" Orientation="Vertical" Width="200" Background="#FF2E2E2E">
+			<GControls:NumberEditor x:Name="NumberEditor_input0" MinValue="0" MaxValue="1" NumberType="Float" AdjustFactor="0.01"/>
+			<GControls:NumberEditor x:Name="NumberEditor_input1" MinValue="0" MaxValue="1" NumberType="Float" AdjustFactor="0.01"/>
+			<GControls:NumberEditor x:Name="NumberEditor_input2" MinValue="0" MaxValue="1" NumberType="Float" AdjustFactor="0.01"/>
+			<CheckBox Name="FixNoiseCheckBox" Foreground="White" Height="30" VerticalContentAlignment="Center" Margin="8,0,0,0">Fix noise</CheckBox>
+			<CheckBox Name="PauseTrainCheckBox" Foreground="White" Height="30" VerticalContentAlignment="Center" Margin="8,0,0,0">Pause train</CheckBox>
+			<GControls:NumberEditor x:Name="NumberEditor_refreshRate" Value="1000" MinValue="0" MaxValue="100000" NumberType="Float" AdjustFactor="1"/>
+		</StackPanel>
+		<Grid DockPanel.Dock="Left" Background="#FF1D2B49">
+		    <Image Name="GeneratedImageView"/>
+        </Grid>
+	</DockPanel>
+</Window>
